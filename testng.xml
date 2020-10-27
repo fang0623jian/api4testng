@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="接口自动化测试框架搭建" verbose="1" preserve-order="true" parallel="none">
+    <test name="register接口测试">
+        <classes>
+            <class name="com.hebut.apitest.testcase.TestRegister"/>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="com.hebut.apitest.listener.APITestListener"/>
+        <listener class-name="com.hebut.apitest.listener.APITestExtentReporterListener"/>
+    </listeners>
+</suite>
